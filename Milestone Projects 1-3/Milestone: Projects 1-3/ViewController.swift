@@ -35,7 +35,9 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Country", for: indexPath)
         let countryName = countries[indexPath.row].replacingOccurrences(of: "@3x.png", with: "").uppercased()
+        let image = UIImage(named: countries[indexPath.row])
         cell.textLabel?.text = countryName
+        cell.imageView?.image = image
         return cell
     }
     
