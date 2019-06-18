@@ -13,6 +13,7 @@
 		24C970BF22B6A5C600FFFD9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C970BE22B6A5C600FFFD9F /* Assets.xcassets */; };
 		24C970C222B6A5C600FFFD9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C970C022B6A5C600FFFD9F /* LaunchScreen.storyboard */; };
 		24C970D222B82A6E00FFFD9F /* WebsiteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C970D122B82A6E00FFFD9F /* WebsiteListViewController.swift */; };
+		24C9711222B88FF400FFFD9F /* approvedWebsites.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24C9711122B88FF400FFFD9F /* approvedWebsites.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		24C970C122B6A5C600FFFD9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24C970C322B6A5C600FFFD9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24C970D122B82A6E00FFFD9F /* WebsiteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteListViewController.swift; sourceTree = "<group>"; };
+		24C9711122B88FF400FFFD9F /* approvedWebsites.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = approvedWebsites.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				24C970BE22B6A5C600FFFD9F /* Assets.xcassets */,
 				24C970C022B6A5C600FFFD9F /* LaunchScreen.storyboard */,
 				24C970C322B6A5C600FFFD9F /* Info.plist */,
+				24C9711122B88FF400FFFD9F /* approvedWebsites.txt */,
 			);
 			path = "Project 04 - Hacking With Swift";
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24C970C222B6A5C600FFFD9F /* LaunchScreen.storyboard in Resources */,
+				24C9711222B88FF400FFFD9F /* approvedWebsites.txt in Resources */,
 				24C970BF22B6A5C600FFFD9F /* Assets.xcassets in Resources */,
 				24C970BD22B6A5B800FFFD9F /* Main.storyboard in Resources */,
 			);

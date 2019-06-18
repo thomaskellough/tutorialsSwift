@@ -10,11 +10,19 @@ import UIKit
 
 class WebsiteListViewController: UITableViewController {
     
-    var websites = ["hackingwithswift.com", "google.com"]
+    var websites = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let approvedWebsitesURL = Bundle.main.url(forResource: "approvedWebsites", withExtension: "txt") {
+            if let approvedWebsites = try? String(contentsOf: approvedWebsitesURL) {
+                websites = approvedWebsites.components(separatedBy: "\n")
+            } else {
+                websites = ["hackingwithswift.com"]
+            }
+        }
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
