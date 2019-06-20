@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     var currentAnswer: UITextField!
     var scoreLabel: UILabel!
     var letterButtons = [UIButton]()
+    var correctAnswers = 0
     
     var activatedButtons = [UIButton]()
     var solutions = [String]()
@@ -121,6 +122,10 @@ class ViewController: UIViewController {
                 letterButton.setTitle("WWW", for: .normal)
                 letterButton.addTarget(self, action: #selector(letterTapped), for: .touchUpInside)
                 
+                letterButton.layer.borderWidth = 1
+                letterButton.layer.borderColor = UIColor.lightGray.cgColor
+                letterButton.layer.cornerRadius = 5
+                
                 let frame = CGRect(x: column * width, y: row * height, width: width, height: height)
                 letterButton.frame = frame
                 
@@ -157,14 +162,20 @@ class ViewController: UIViewController {
             answersLabel.text = splitAnswers?.joined(separator: "\n")
             
             currentAnswer.text = ""
-            score += 1
+            score += 5
+            correctAnswers += 1
             
-            if score % 7 == 0 {
+            if correctAnswers % 7 == 0 {
                 let ac = UIAlertController(title: "Well done!", message: "Are you ready for the next level?", preferredStyle: .alert)
                 ac.addAction(UIAlertAction(title: "Let's go!", style: .default, handler: leveledUp))
                 present(ac, animated: true)
             }
             
+        } else {
+            score -= 2
+            let ac = UIAlertController(title: "Oops!", message: "That's not the correct word! Try again!", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+            present(ac, animated: true)
         }
     }
     
