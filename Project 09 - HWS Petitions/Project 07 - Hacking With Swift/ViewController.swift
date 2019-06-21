@@ -54,15 +54,18 @@ class ViewController: UITableViewController {
     }
     
     @objc func filterData() {
-        let ac = UIAlertController(title: "Filter with...", message: nil, preferredStyle: .alert)
-        ac.addTextField()
-        let submitAction = UIAlertAction(title: "Submit", style: .default) {
-            [weak self, weak ac] _ in
-            guard let filteredBy = ac?.textFields?[0].text else { return }
-            self?.submit(filteredBy)
+        DispatchQueue.global(qos: .background).async {
+            [weak self] in
+            let ac = UIAlertController(title: "Filter with...", message: nil, preferredStyle: .alert)
+            ac.addTextField()
+            let submitAction = UIAlertAction(title: "Submit", style: .default) {
+                [weak self, weak ac] _ in
+                guard let filteredBy = ac?.textFields?[0].text else { return }
+                self?.submit(filteredBy)
+            }
+            ac.addAction(submitAction)
+            self?.present(ac, animated: true)
         }
-        ac.addAction(submitAction)
-        present(ac, animated: true)
     }
     
     func submit(_ filteredBy: String) {
