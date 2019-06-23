@@ -1,0 +1,30 @@
+U.S. Presidents: Obama
+U.S. Presidents: Washington
+U.S. Presidents: Trump
+U.S. Presidents: Lincoln
+U.S. Presidents: Roosevelt
+Food: Avocado
+Food: Sandwich
+Food: Steak
+Food: Asparagus
+Food: Pudding
+Food: Chocolate
+Food: Tomato
+Dog Name: Thor
+Dog Name: Effie
+Dog Name: Arya
+Dog Name: Avery
+Dog Name: Juno
+Superheroes: Flash
+Superheroes: Superman
+Superheroes: Batman
+Superheroes: Aquaman
+Superheroes: Thor
+Superheroes: Spiderman
+Superheroes: Ironman
+Superheroes: Hulk
+Superheroes: Wolverine
+Superheroes: Storm
+Superheroes: Mystique
+Superheroes: Cyclops
+Superheroes: Magneto
