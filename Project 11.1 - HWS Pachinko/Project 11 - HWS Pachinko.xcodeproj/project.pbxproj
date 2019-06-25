@@ -9,25 +9,25 @@
 /* Begin PBXBuildFile section */
 		242D9B9A22C1305D00894FE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242D9B9922C1305D00894FE9 /* AppDelegate.swift */; };
 		242D9B9C22C1305D00894FE9 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 242D9B9B22C1305D00894FE9 /* GameScene.sks */; };
-		242D9B9E22C1305E00894FE9 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 242D9B9D22C1305E00894FE9 /* Actions.sks */; };
 		242D9BA022C1305E00894FE9 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242D9B9F22C1305E00894FE9 /* GameScene.swift */; };
 		242D9BA222C1305E00894FE9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242D9BA122C1305E00894FE9 /* GameViewController.swift */; };
 		242D9BA522C1305E00894FE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 242D9BA322C1305E00894FE9 /* Main.storyboard */; };
 		242D9BA722C1306500894FE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 242D9BA622C1306500894FE9 /* Assets.xcassets */; };
 		242D9BAA22C1306500894FE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 242D9BA822C1306500894FE9 /* LaunchScreen.storyboard */; };
+		242D9BB222C1AB6500894FE9 /* FireParticles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 242D9BB122C1AB6500894FE9 /* FireParticles.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		242D9B9622C1305D00894FE9 /* Project 11 - HWS Pachinko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 11 - HWS Pachinko.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		242D9B9922C1305D00894FE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		242D9B9B22C1305D00894FE9 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		242D9B9D22C1305E00894FE9 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		242D9B9F22C1305E00894FE9 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		242D9BA122C1305E00894FE9 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		242D9BA422C1305E00894FE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		242D9BA622C1306500894FE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		242D9BA922C1306500894FE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		242D9BAB22C1306500894FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		242D9BB122C1AB6500894FE9 /* FireParticles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FireParticles.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +62,13 @@
 			children = (
 				242D9B9922C1305D00894FE9 /* AppDelegate.swift */,
 				242D9B9B22C1305D00894FE9 /* GameScene.sks */,
-				242D9B9D22C1305E00894FE9 /* Actions.sks */,
 				242D9B9F22C1305E00894FE9 /* GameScene.swift */,
 				242D9BA122C1305E00894FE9 /* GameViewController.swift */,
 				242D9BA322C1305E00894FE9 /* Main.storyboard */,
 				242D9BA622C1306500894FE9 /* Assets.xcassets */,
 				242D9BA822C1306500894FE9 /* LaunchScreen.storyboard */,
 				242D9BAB22C1306500894FE9 /* Info.plist */,
+				242D9BB122C1AB6500894FE9 /* FireParticles.sks */,
 			);
 			path = "Project 11 - HWS Pachinko";
 			sourceTree = "<group>";
@@ -133,9 +133,9 @@
 			files = (
 				242D9BA522C1305E00894FE9 /* Main.storyboard in Resources */,
 				242D9B9C22C1305D00894FE9 /* GameScene.sks in Resources */,
+				242D9BB222C1AB6500894FE9 /* FireParticles.sks in Resources */,
 				242D9BA722C1306500894FE9 /* Assets.xcassets in Resources */,
 				242D9BAA22C1306500894FE9 /* LaunchScreen.storyboard in Resources */,
-				242D9B9E22C1305E00894FE9 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kellough.Project-11---HWS-Pachinko";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -322,7 +322,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kellough.Project-11---HWS-Pachinko";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
