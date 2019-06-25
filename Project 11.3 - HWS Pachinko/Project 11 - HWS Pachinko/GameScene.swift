@@ -155,9 +155,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             destroy(ball: ball)
             score -= 1
         } else if object.name == "box" {
-            let box = boxes[0]
-            boxes.remove(at: 0)
-            box.removeFromParent()
+            let objectPosition = object.position
+            let box = nodes(at: objectPosition)
+            box[0].removeFromParent()
         }
     }
     
