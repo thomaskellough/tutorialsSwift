@@ -13,7 +13,6 @@
 		242D9B0B22BD560000894FE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 242D9B0A22BD560000894FE9 /* Assets.xcassets */; };
 		242D9B0E22BD560000894FE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 242D9B0C22BD560000894FE9 /* LaunchScreen.storyboard */; };
 		242D9B1822BD650400894FE9 /* hangmanWords.txt in Resources */ = {isa = PBXBuildFile; fileRef = 242D9B1722BD650400894FE9 /* hangmanWords.txt */; };
-		242D9B5222C01FD700894FE9 /* hangmanBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 242D9B5022C01FD600894FE9 /* hangmanBackground.png */; };
 		242D9B5722C022BC00894FE9 /* hangman1.png in Resources */ = {isa = PBXBuildFile; fileRef = 242D9B5522C022BB00894FE9 /* hangman1.png */; };
 		242D9B5822C022BC00894FE9 /* hangman0.png in Resources */ = {isa = PBXBuildFile; fileRef = 242D9B5622C022BC00894FE9 /* hangman0.png */; };
 		242D9B5E22C0297100894FE9 /* hangman3.png in Resources */ = {isa = PBXBuildFile; fileRef = 242D9B5922C0297100894FE9 /* hangman3.png */; };
@@ -21,6 +20,7 @@
 		242D9B6022C0297100894FE9 /* hangman6.png in Resources */ = {isa = PBXBuildFile; fileRef = 242D9B5B22C0297100894FE9 /* hangman6.png */; };
 		242D9B6122C0297100894FE9 /* hangman2.png in Resources */ = {isa = PBXBuildFile; fileRef = 242D9B5C22C0297100894FE9 /* hangman2.png */; };
 		242D9B6222C0297100894FE9 /* hangman4.png in Resources */ = {isa = PBXBuildFile; fileRef = 242D9B5D22C0297100894FE9 /* hangman4.png */; };
+		2430A8E322C5352200E56D06 /* hangmanWallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2430A8E222C5352100E56D06 /* hangmanWallpaper.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,6 @@
 		242D9B0D22BD560000894FE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		242D9B0F22BD560000894FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		242D9B1722BD650400894FE9 /* hangmanWords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hangmanWords.txt; sourceTree = "<group>"; };
-		242D9B5022C01FD600894FE9 /* hangmanBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hangmanBackground.png; sourceTree = "<group>"; };
 		242D9B5522C022BB00894FE9 /* hangman1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hangman1.png; sourceTree = "<group>"; };
 		242D9B5622C022BC00894FE9 /* hangman0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hangman0.png; sourceTree = "<group>"; };
 		242D9B5922C0297100894FE9 /* hangman3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hangman3.png; sourceTree = "<group>"; };
@@ -40,6 +39,7 @@
 		242D9B5B22C0297100894FE9 /* hangman6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hangman6.png; sourceTree = "<group>"; };
 		242D9B5C22C0297100894FE9 /* hangman2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hangman2.png; sourceTree = "<group>"; };
 		242D9B5D22C0297100894FE9 /* hangman4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hangman4.png; sourceTree = "<group>"; };
+		2430A8E222C5352100E56D06 /* hangmanWallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hangmanWallpaper.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 				242D9B0C22BD560000894FE9 /* LaunchScreen.storyboard */,
 				242D9B0F22BD560000894FE9 /* Info.plist */,
 				242D9B1722BD650400894FE9 /* hangmanWords.txt */,
-				242D9B5022C01FD600894FE9 /* hangmanBackground.png */,
+				2430A8E222C5352100E56D06 /* hangmanWallpaper.jpg */,
 				242D9B5622C022BC00894FE9 /* hangman0.png */,
 				242D9B5522C022BB00894FE9 /* hangman1.png */,
 				242D9B5C22C0297100894FE9 /* hangman2.png */,
@@ -151,13 +151,13 @@
 			files = (
 				242D9B0E22BD560000894FE9 /* LaunchScreen.storyboard in Resources */,
 				242D9B0B22BD560000894FE9 /* Assets.xcassets in Resources */,
-				242D9B5222C01FD700894FE9 /* hangmanBackground.png in Resources */,
 				242D9B6022C0297100894FE9 /* hangman6.png in Resources */,
 				242D9B1822BD650400894FE9 /* hangmanWords.txt in Resources */,
 				242D9B5E22C0297100894FE9 /* hangman3.png in Resources */,
 				242D9B5722C022BC00894FE9 /* hangman1.png in Resources */,
 				242D9B5F22C0297100894FE9 /* hangman5.png in Resources */,
 				242D9B0922BD55F800894FE9 /* Main.storyboard in Resources */,
+				2430A8E322C5352200E56D06 /* hangmanWallpaper.jpg in Resources */,
 				242D9B6222C0297100894FE9 /* hangman4.png in Resources */,
 				242D9B6122C0297100894FE9 /* hangman2.png in Resources */,
 				242D9B5822C022BC00894FE9 /* hangman0.png in Resources */,

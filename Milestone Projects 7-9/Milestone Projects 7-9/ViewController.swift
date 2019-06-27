@@ -52,10 +52,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .redo, target: self, action: #selector(loadGame))
-        if let backgroundImage = UIImage(named: "hangmanBackground.png") {
-            view.backgroundColor = UIColor(patternImage: backgroundImage)
-        }
-        
+        view.layer.contents = UIImage(named: "hangmanWallpaper.jpg")!.cgImage
         loadGame()
     }
 
