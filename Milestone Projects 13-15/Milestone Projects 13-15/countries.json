@@ -1,0 +1,32 @@
+{
+    "results":[
+        {
+            "country":"United States",
+            "capital":"Washington D.C.",
+            "languages":[
+                {
+                    "official":"English",
+                    "second":"Spanish"
+                }
+            ],
+            "area (sq mi)":3796742,
+            "population":327167434,
+            "population increasing":true,
+            "currency":"United States Dollar"
+        },
+        {
+            "country":"France",
+            "capital":"Paris",
+            "languages":[
+                {
+                    "official":"French",
+                    "second":"English"
+                }
+            ],
+            "area (sq mi)":247368,
+            "population":6698000,
+            "population increasing":true,
+            "currency":"Euro"
+        }
+    ]
+}
