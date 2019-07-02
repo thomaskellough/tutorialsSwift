@@ -19,10 +19,10 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        performSelector(inBackground: #selector(loadImages), with: nil)
+        loadImages()
     }
     
-    @objc func loadImages() {
+    func loadImages() {
         title = "Picture \(pictureSelected) of \(totalPictures)"
         
         navigationItem.largeTitleDisplayMode = .never
