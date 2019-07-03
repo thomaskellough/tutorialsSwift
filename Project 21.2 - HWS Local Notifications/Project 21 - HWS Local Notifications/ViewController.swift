@@ -1,0 +1,121 @@
+//
+//  ViewController.swift
+//  Project 21 - HWS Local Notifications
+//
+//  Created by Thomas Kellough on 7/3/19.
+//  Copyright © 2019 Thomas Kellough. All rights reserved.
+//
+
+import UserNotifications
+import UIKit
+
+class ViewController: UIViewController, UNUserNotificationCenterDelegate {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Register", style: .plain, target: self, action: #selector(registerLocal))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Schedule", style: .plain, target: self, action: #selector(scheduleLocal))
+    }
+
+    @objc func registerLocal() {
+        //  Request permission to show user notifications
+        let center = UNUserNotificationCenter.current()
+        
+        center.requestAuthorization(options: [.alert, .badge, .sound]) {
+            granted, error in
+            if granted {
+                print("Yay!")
+            } else {
+                print("D'oh!")
+            }
+        }
+    }
+    
+    @objc func scheduleLocal() {
+        registerCateories()
+        //  Run if we have user permission from registerLocal()
+        //  What content to show
+        //  When to show it
+        //  A request (combination of content and timing)
+        let center = UNUserNotificationCenter.current()
+        center.removeAllPendingNotificationRequests()  //  Remove all pending notification requests
+        
+        //  Content to show
+        let content = UNMutableNotificationContent()
+        content.title = "Late wakeup call"  //  Bigger text on notification, couple words at most, ideally
+        content.body = "The early bird catches the worm, but the second mouse gets the cheese" //  Main message
+        content.categoryIdentifier = "alarm"
+        content.userInfo = ["customData": "fizzbuzz"]
+        content.sound = .default
+        
+        //  When to show it
+        var dateComponents = DateComponents()
+        dateComponents.hour = 10
+        dateComponents.minute = 30
+//        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)  // Good for testing purposes!
+        
+        //  Request
+        let requests = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        center.add(requests)
+        
+     }
+    
+    func registerCateories() {
+        let center = UNUserNotificationCenter.current()
+        center.delegate = self  //  Any messages get sent back to us
+        
+        let show = UNNotificationAction(identifier: "show", title: "Tell me more", options: .foreground)
+        let remindMeLater = UNNotificationAction(identifier: "remindMeLater", title: "Remind me later...")
+        let category = UNNotificationCategory(identifier: "alarm", actions: [show, remindMeLater], intentIdentifiers: [], options: [])
+        center.setNotificationCategories([category])
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        let userInfo = response.notification.request.content.userInfo
+        
+        if let customData = userInfo["customData"] as? String {
+            print("Custom data received: \(customData)")
+            
+            switch response.actionIdentifier {
+            case UNNotificationDefaultActionIdentifier:
+                //  The user swiped to unlock
+                let ac = UIAlertController(title: "Welcome Back!", message: "Thanks for opening the app from notification center!", preferredStyle: .alert)
+                ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+                present(ac, animated: true)
+            case "show":
+                //  User tapped our custom button with the "show" identifier (made in registerCategories())
+                let ac = UIAlertController(title: "Wanna see more?", message: "Well, I've got nothing to show you!", preferredStyle: .alert)
+                ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+                present(ac, animated: true)
+            case "remindMeLater":
+                let ac = UIAlertController(title: "I'll remind you!", message: "Sorry for bugging you! I'll remind you again in 24 hours!", preferredStyle: .alert)
+                ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+                present(ac, animated: true)
+                remindMeLater()
+            default:
+                break
+            }
+        }
+        //  We must call the completion handler when we are finished
+        completionHandler()  //  Remember, this is marked as @escaping, so it can escape the current method and be used later on
+    }
+    
+    func remindMeLater() {
+        registerCateories()
+        let center = UNUserNotificationCenter.current()
+        center.removeAllPendingNotificationRequests()
+        let content = UNMutableNotificationContent()
+        content.title = "Late wakeup call"
+        content.body = "The early bird catches the worm, but the second mouse gets the cheese"
+        content.categoryIdentifier = "alarm"
+        content.userInfo = ["customData": "fizzbuzz"]
+        content.sound = .default
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 86400, repeats: false)
+        let requests = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        center.add(requests)
+    }
+
+}
+
