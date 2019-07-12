@@ -45,6 +45,8 @@ class GameScene: SKScene {
     
     var isGameEnded = false
     var gameOver: SKSpriteNode!
+    var restartGame: SKSpriteNode!
+    var canSlice = true
     
     var chainDelayTime = 5.0
     var chainDelayTimeFast = 10.0
@@ -63,6 +65,9 @@ class GameScene: SKScene {
         physicsWorld.gravity = CGVector(dx: 0, dy: -6)
         physicsWorld.speed = 0.85
         
+        gameOver = nil
+        
+        isGameEnded = false
         createScore()
         createLives()
         createSlices()
@@ -78,6 +83,13 @@ class GameScene: SKScene {
             [weak self] in
             self?.tossEnemies()
         }
+    }
+    
+    func startGame() {
+        let gameScene:GameScene = GameScene(size: self.view!.bounds.size)
+        let transition = SKTransition.fade(withDuration: 1.0)
+        gameScene.scaleMode = SKSceneScaleMode.fill
+        self.view!.presentScene(gameScene, transition: transition)
     }
     
     func createScore() {
@@ -117,6 +129,7 @@ class GameScene: SKScene {
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard isGameEnded == false else { return }
+        guard canSlice == true else { return }
         guard let touch = touches.first else { return }
         let location = touch.location(in: self)
         activeSlicePoints.append(location)
@@ -186,10 +199,8 @@ class GameScene: SKScene {
     
     func endGame(triggeredByBomb: Bool) {
         guard isGameEnded == false else { return }
-        
-        isGameEnded = true
         physicsWorld.speed = 0
-        isUserInteractionEnabled = false
+//        isUserInteractionEnabled = false
         
         bombSoundEffect?.stop()
         bombSoundEffect = nil
@@ -205,6 +216,13 @@ class GameScene: SKScene {
         gameOver.zPosition = 2
         addChild(gameOver)
         
+        restartGame = SKSpriteNode(imageNamed: "newGame")
+        restartGame.position = CGPoint(x: 512, y: 200)
+        restartGame.zPosition = 3
+        restartGame.name = "restart"
+        addChild(restartGame)
+        
+        canSlice = false
     }
     
     func playSwooshSound() {
@@ -229,6 +247,12 @@ class GameScene: SKScene {
         activeSlicePoints.removeAll(keepingCapacity: true)
         
         let location = touch.location(in: self)
+        let nodesAtPoint = nodes(at: location)
+        for node in nodesAtPoint {
+            if node.name == "restart" {
+                startGame()
+            }
+        }
         activeSlicePoints.append(location)
         
         redrawActiveSlice()
