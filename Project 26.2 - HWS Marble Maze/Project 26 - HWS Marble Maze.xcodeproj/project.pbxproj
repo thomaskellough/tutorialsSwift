@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24C3452C22DC21B900627A8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C3452B22DC21B800627A8E /* AppDelegate.swift */; };
+		24C3452E22DC21B900627A8E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 24C3452D22DC21B900627A8E /* GameScene.sks */; };
+		24C3453222DC21B900627A8E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C3453122DC21B900627A8E /* GameScene.swift */; };
+		24C3453422DC21B900627A8E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C3453322DC21B900627A8E /* GameViewController.swift */; };
+		24C3453722DC21B900627A8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C3453522DC21B900627A8E /* Main.storyboard */; };
+		24C3453922DC21C500627A8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C3453822DC21C500627A8E /* Assets.xcassets */; };
+		24C3453C22DC21C500627A8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C3453A22DC21C500627A8E /* LaunchScreen.storyboard */; };
+		24C3454422DC225800627A8E /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24C3454322DC225800627A8E /* level1.txt */; };
+		24C3454822DD3C5000627A8E /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24C3454722DD3C5000627A8E /* level2.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		24C3452822DC21B800627A8E /* Project 26 - HWS Marble Maze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 26 - HWS Marble Maze.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24C3452B22DC21B800627A8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24C3452D22DC21B900627A8E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		24C3453122DC21B900627A8E /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		24C3453322DC21B900627A8E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		24C3453622DC21B900627A8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24C3453822DC21C500627A8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24C3453B22DC21C500627A8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24C3453D22DC21C500627A8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24C3454322DC225800627A8E /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
+		24C3454722DD3C5000627A8E /* level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24C3452522DC21B800627A8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24C3451F22DC21B800627A8E = {
+			isa = PBXGroup;
+			children = (
+				24C3452A22DC21B800627A8E /* Project 26 - HWS Marble Maze */,
+				24C3452922DC21B800627A8E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24C3452922DC21B800627A8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24C3452822DC21B800627A8E /* Project 26 - HWS Marble Maze.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24C3452A22DC21B800627A8E /* Project 26 - HWS Marble Maze */ = {
+			isa = PBXGroup;
+			children = (
+				24C3452B22DC21B800627A8E /* AppDelegate.swift */,
+				24C3452D22DC21B900627A8E /* GameScene.sks */,
+				24C3453122DC21B900627A8E /* GameScene.swift */,
+				24C3453322DC21B900627A8E /* GameViewController.swift */,
+				24C3453522DC21B900627A8E /* Main.storyboard */,
+				24C3453822DC21C500627A8E /* Assets.xcassets */,
+				24C3453A22DC21C500627A8E /* LaunchScreen.storyboard */,
+				24C3453D22DC21C500627A8E /* Info.plist */,
+				24C3454322DC225800627A8E /* level1.txt */,
+				24C3454722DD3C5000627A8E /* level2.txt */,
+			);
+			path = "Project 26 - HWS Marble Maze";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24C3452722DC21B800627A8E /* Project 26 - HWS Marble Maze */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24C3454022DC21C500627A8E /* Build configuration list for PBXNativeTarget "Project 26 - HWS Marble Maze" */;
+			buildPhases = (
+				24C3452422DC21B800627A8E /* Sources */,
+				24C3452522DC21B800627A8E /* Frameworks */,
+				24C3452622DC21B800627A8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 26 - HWS Marble Maze";
+			productName = "Project 26 - HWS Marble Maze";
+			productReference = 24C3452822DC21B800627A8E /* Project 26 - HWS Marble Maze.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24C3452022DC21B800627A8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Thomas Kellough";
+				TargetAttributes = {
+					24C3452722DC21B800627A8E = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 24C3452322DC21B800627A8E /* Build configuration list for PBXProject "Project 26 - HWS Marble Maze" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24C3451F22DC21B800627A8E;
+			productRefGroup = 24C3452922DC21B800627A8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24C3452722DC21B800627A8E /* Project 26 - HWS Marble Maze */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24C3452622DC21B800627A8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C3454422DC225800627A8E /* level1.txt in Resources */,
+				24C3454822DD3C5000627A8E /* level2.txt in Resources */,
+				24C3453722DC21B900627A8E /* Main.storyboard in Resources */,
+				24C3452E22DC21B900627A8E /* GameScene.sks in Resources */,
+				24C3453922DC21C500627A8E /* Assets.xcassets in Resources */,
+				24C3453C22DC21C500627A8E /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24C3452422DC21B800627A8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C3453222DC21B900627A8E /* GameScene.swift in Sources */,
+				24C3453422DC21B900627A8E /* GameViewController.swift in Sources */,
+				24C3452C22DC21B900627A8E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		24C3453522DC21B900627A8E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24C3453622DC21B900627A8E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24C3453A22DC21C500627A8E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24C3453B22DC21C500627A8E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24C3453E22DC21C500627A8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		24C3453F22DC21C500627A8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24C3454122DC21C500627A8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3AX6FLKBW9;
+				INFOPLIST_FILE = "Project 26 - HWS Marble Maze/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kellough.Project-26---HWS-Marble-Maze";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		24C3454222DC21C500627A8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3AX6FLKBW9;
+				INFOPLIST_FILE = "Project 26 - HWS Marble Maze/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kellough.Project-26---HWS-Marble-Maze";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24C3452322DC21B800627A8E /* Build configuration list for PBXProject "Project 26 - HWS Marble Maze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24C3453E22DC21C500627A8E /* Debug */,
+				24C3453F22DC21C500627A8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24C3454022DC21C500627A8E /* Build configuration list for PBXNativeTarget "Project 26 - HWS Marble Maze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24C3454122DC21C500627A8E /* Debug */,
+				24C3454222DC21C500627A8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24C3452022DC21B800627A8E /* Project object */;
+}
